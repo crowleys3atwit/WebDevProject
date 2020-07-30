@@ -25,7 +25,7 @@ li a:hover {
 	margin-left: 10px;
 	background-color: cornflowerblue;
 	border-radius: 12px;
-	font-size: 20px;
+	font-size: 24px;
 	color: cornsilk;
 	padding: 10px 24px;
 }
@@ -84,11 +84,6 @@ li a:hover {
 	vertical-align: top;
 }
 
-#message {
-	width: 450px;
-	height: 250px;
-}
-
 #sub {
 	background-color: cornflowerblue;
 	border-radius: 12px;
@@ -97,36 +92,86 @@ li a:hover {
 	padding: 10px 24px;
 }
 
-#ps {
-	font-size: 40px;
-	font-weight: bold;
+#paragraphBox {
+	padding-top: 1%;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+#paragraph {
+	max-width: 100%;
+	height: auto;
+	text-align: left;
+	font-size: 18px;
 }
 
-#a2 {
-	margin: 30px;
+.graphic_img {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 50px;
 	text-align: center;
 }
 
-#section1 {
-	margin-left: 200px;
-	margin-top: 60px;
-	margin-bottom: 50px;
-	text-align: left;
+.graphic_img img {
+	position: relative;
+	display: inline;
+	vertical-align: middle;
 }
 
-#paragraph {
-	/*margin: 200px;*/
-	padding-left: 200px;
-	padding-right: 200px;
+.img_container {
+	margin-left: 10%;
+	margin-right: 10%;
 	margin-top: 50px;
-	max-width: 75%;
-	height: auto;
+	margin-bottom: 150px;
+	text-align: center;
 }
 
-#services {
-	margin-left: 250px;
-	margin-top: 50px;
+.img_container img {
+	position: relative;
+	display: inline;
+	vertical-align: middle;
+	margin: 25px;
+	width: 620px;
+	height: 520px;
+	border: solid;
+	border-width: 1px;
+	border-color: black;
+	background-color: black;
+	transition: .75s ease;
+	box-shadow: 10px 10px 5px grey;
 }
+
+.services {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 50px;
+	margin-bottom: 150px;
+	text-align: center;
+}
+
+.services img {
+	position: relative;
+	display: inline;
+	vertical-align: middle;
+	margin: 25px;
+	width: 420px;
+	height: 320px;
+	box-shadow: 10px 10px 5px grey;
+	transition: .75s ease;
+}
+
+.services .btn {
+	position: absolute;
+	display: none; 
+	background-color:green;
+	color:white;
+
+}
+
+.services img:hover {
+	display: inline-block;
+	opacity: 0.3;
+}
+
 
 .footer {
 	left: 0;
@@ -168,7 +213,7 @@ li a:hover {
 }
 
 .inner_footer .footer_third {
-	width: 350px;
+	width: 25%;
 	float: left;
 	height: 100%;
 }
@@ -180,7 +225,7 @@ li a:hover {
 	display: block;
 	font-weight: bold;
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 }
 
 .inner_footer .footer_third a {
@@ -189,7 +234,7 @@ li a:hover {
 	display: block;
 	width: 100%;
 	font-weight: bolder;
-	padding-bottom: 5px;
+	padding-bottom: 0px;
 }
 
 
@@ -223,4 +268,33 @@ input[type=submit]:hover {
 	background-color: #f2f2f2;
 	padding: 20px;
 	display: flex;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.slideshow_class {
+	margin-left:15%;
+	margin-right:15%;
+	padding-bottom:100px;
+	padding-top:70px;
+	text-align:center;
+}
+
+.slideshow_class .mySlides {
+	position: relative;
+	display: inline;
+	vertical-align: middle;
+}
+
+.slideshow_class img {
+	margin-left:15%;
+	position: relative;
+	display: inline;
+	vertical-align: middle;
+	border: ridge;
+	border-width:6px;
+	border-radius:10px;
+	border-color:lightgray;
 }

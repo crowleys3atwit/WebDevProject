@@ -27,37 +27,63 @@
 
 <body id="main">
 	<div class="body">
-		<div id="section1" class="text-center">
-			<h1 id="ps">Printing Services</h1>
-			<article id="paragraph">
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-
-				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-				when an unknown printer took a galley of type and scrambled it to make a type
-				specimen book. It has survived not only five centuries, but also the leap into
-				electronic typesetting, remaining essentially unchanged. It was popularised in
-				the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-				and more recently with desktop publishing software like Aldus PageMaker including
-				versions of Lorem Ipsum.
-			</article>
-			<table style="width: 100%" id="services">
-				<tr>
-					<th>Services We Offer</th>
-				</tr>
-				<tr>
-					<td>Service 1</td>
-				</tr>
-				<tr>
-					<td>Service 2</td>
-				</tr>
-				<tr>
-					<td>Service 3</td>
-				</tr>
-			</table>
+		<h1 class="text-center">Offset Printing</h1>
+		<div id="paragraphBox">
+			<p id="paragraph" class="text-center">
+				Whether you need black ink forms, spot color stationery, or full color (CMYK)
+				brochures, Spectrum Press can handle your printing projects. Our press operators
+				are experienced craftspeople, averaging more than 30 years each in the printing trade.
+			</p>
 		</div>
-		<p class="signup">
-			<label>Sign up today!</label>
-		</p>
+
+		<h1 class="text-center" style="padding-top:50px;">Digital & Wide Format Printing</h1>
+		<div id="paragraphBox">
+			<p id="paragraph" class="text-center">
+				In addition to our offset capabilities, we also offer a full range of digital printing, 
+				from high speed copying, to digital color printing, to large format printing. Spectrum Press 
+				has the newest Konica-Minolta black ink digital press and Xerox color digital press in our 
+				arsenal, so even your short run and digital projects get the high resolution detail they deserve!
+			</p>
+		</div>
+
+		<div class="w3-content w3-display-container">
+			<div class="slideshow_class">
+				<img class="mySlides" src="ss5.jpg" style="width:70%">
+				<img class="mySlides" src="ss1.jpg" style="width:70%">
+				<img class="mySlides" src="ss4.jpg" style="width:70%">
+				<img class="mySlides" src="ss2.jpg" style="width:70%">
+				<img class="mySlides" src="ss3.jpg" style="width:70%">
+				<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+		</div>
+
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) { slideIndex = 1 }
+				if (n < 1) { slideIndex = x.length }
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex - 1].style.display = "block";
+			}
+		</script>
+
+		<div style="text-align: center;">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/EZyIcwDpNjM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<article style="font-size: 9px">
+				Short clip of our original press in action.
+			</article>
+		</div>
 	</div>
 
 	<div class="footer">
@@ -70,7 +96,7 @@
 
 			<div class="footer_third">
 				<h1>Contact Info:</h1>
-				<a>example@email.com</a>
+				<a>brian@spectrumpressinc.com</a>
 				<a>(781) 828-5050</a>
 			</div>
 
